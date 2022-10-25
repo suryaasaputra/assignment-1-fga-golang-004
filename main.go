@@ -32,7 +32,7 @@ func main() {
 		{Name: "Tedi", Alamat: "Citayem", Pekerjaan: "Freelancer", Alasan: "Dapetin sertifikat"},
 	}
 
-	if x > len(dbSiswa) {
+	if x > len(dbSiswa) || x < 1 {
 		showError()
 	} else {
 		tampilData(dbSiswa[x-1])
